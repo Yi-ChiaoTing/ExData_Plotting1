@@ -16,7 +16,7 @@ data$DateTime <- as.POSIXct(DateTime)
 
 #plot and store the file in png device
 with(data, {
-  plot(DateTime,Sub_metering_1,xlab="",ylab="Energy Sub metering",type="l")
+  plot(DateTime,Sub_metering_1,xlab="",ylab="Energy sub metering",type="l")
   lines(DateTime,Sub_metering_2, col='Red')
   lines(DateTime,Sub_metering_3, col='Blue')
   legend("topright",lty=1,lwd=1,col=c("black","blue","red"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
